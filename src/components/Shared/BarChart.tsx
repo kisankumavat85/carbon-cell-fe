@@ -34,6 +34,11 @@ const BarChart = ({ data, xTitle, yTitle }: Props) => {
     <Bar
       options={{
         responsive: true,
+        onResize: (chart: any, size) => {
+          if (size.width <= 687) {
+            chart.config.data.datasets[0].barThickness = 15;
+          }
+        },
         plugins: {
           legend: {
             position: "top",

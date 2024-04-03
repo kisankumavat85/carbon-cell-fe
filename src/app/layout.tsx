@@ -1,11 +1,19 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { IBM_Plex_Mono } from "next/font/google";
+import { Toaster } from "react-hot-toast";
 import "./globals.css";
+
 import Sidebar from "@/components/Shared/Sidebar";
 import MobileMenu from "@/components/Shared/MobileMenu";
-import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const ibmPlexMono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  weight: ["700"],
+  variable: "--font-ibm-plex-mono",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -19,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} min-h-dvh`}>
+      <body className={`${inter.className} ${ibmPlexMono.variable} min-h-dvh`}>
         <div className="lg:flex w-full max-w-[1440px] mx-auto">
           <Sidebar />
           <MobileMenu />

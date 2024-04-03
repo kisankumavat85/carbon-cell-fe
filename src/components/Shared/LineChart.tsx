@@ -37,6 +37,11 @@ const LineChart = ({ data, xTitle, yTitle }: Props) => {
     <Line
       options={{
         responsive: true,
+        onResize: (chart, size) => {
+          if (size.width <= 687) {
+            chart.config.data.datasets[0].borderWidth = 2;
+          }
+        },
         plugins: {
           legend: {
             position: "top" as const,

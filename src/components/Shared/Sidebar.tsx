@@ -10,9 +10,13 @@ const Sidebar = () => {
 
   return (
     <aside className="flex-shrink-0  hidden lg:flex border-e dark:border-e-border w-[280px] min-h-screen flex-col gap-2">
-      <h2 className="text-2xl font-bold py-4 ps-8 border-b dark:border-b-border">
-        <Link href="/">Carbon Cell</Link>
-      </h2>
+      <div className="py-4 ps-8 border-b dark:border-b-border">
+        <h2 className="text-2xl font-bold font-mono">
+          <Link href="/">
+            Carbon <span className="text-red-500">Cell</span>
+          </Link>
+        </h2>
+      </div>
       <nav>
         <ul className="flex flex-col gap-2">
           {linkData.group.links.map((l, i) => {

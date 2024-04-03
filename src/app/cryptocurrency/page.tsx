@@ -61,8 +61,8 @@ const CryptocurrencyPage = () => {
 
   return (
     <div className="flex flex-col w-full gap-10 lg:gap-20 p-6">
-      <div className="flex items-center justify-between flex-col lg:flex-row gap-4">
-        <div className="flex flex-col gap-2">
+      <div className="flex items-center justify-between flex-col md:flex-row gap-4">
+        <div className="flex flex-col gap-2 w-full">
           <h1 className="lg:text-3xl text-2xl font-bold text-red-500">
             Bitcoin Price Index (BPI)
           </h1>
@@ -72,7 +72,7 @@ const CryptocurrencyPage = () => {
         </div>
         <Button
           onClick={connectMetamask}
-          className="bg-red-500 text-lg w-full lg:w-fit"
+          className="bg-red-500 text-lg w-full md:w-fit"
           disabled={!!connectedAccount}
         >
           {connectedAccount ? "Connected" : "Connect Wallet"}

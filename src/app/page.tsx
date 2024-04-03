@@ -19,15 +19,14 @@ export default async function Home() {
         backgroundColor: "#ff0000",
         borderColor: "#ffd69d",
         tension: 0.5,
-        borderWidth: 5,
-        pointRadius: 8,
+        borderWidth: 4,
       },
     ],
   };
 
   return (
     <div className="p-6 w-full">
-      <h1 className="text-3xl mb-16 font-bold text-red-500">
+      <h1 className="lg:text-3xl text-2xl lg:mb-16 mb-8 font-bold text-red-500">
         USA Population (Line chart)
       </h1>
       <div className="w-full">
