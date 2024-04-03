@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Sidebar from "@/components/Shared/Sidebar";
 import MobileMenu from "@/components/Shared/MobileMenu";
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,6 +24,7 @@ export default function RootLayout({
           <Sidebar />
           <MobileMenu />
           <main className="w-full flex-shrink">{children}</main>
+          <Toaster />
         </div>
       </body>
     </html>

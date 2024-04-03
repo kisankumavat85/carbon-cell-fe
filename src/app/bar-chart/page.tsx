@@ -25,7 +25,9 @@ export default async function BarChartPage() {
 
   return (
     <main className="p-6">
-      <h1 className="text-3xl mb-16 font-bold">USA Population (Bar chart)</h1>
+      <h1 className="text-3xl mb-16 font-bold text-red-500">
+        USA Population (Bar chart)
+      </h1>
       <div className="w-full">
         <BarChart data={chartData} xTitle="Year" yTitle="Population" />
       </div>

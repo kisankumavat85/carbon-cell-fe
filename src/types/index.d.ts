@@ -1,3 +1,7 @@
+interface Window {
+  ethereum: any;
+}
+
 declare type Population = {
   "ID Nation": string;
   Nation: string;

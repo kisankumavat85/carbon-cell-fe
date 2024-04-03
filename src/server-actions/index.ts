@@ -15,8 +15,6 @@ export const getCurrencyRates = async () => {
   const res = await fetch("https://api.coindesk.com/v1/bpi/currentprice.json", {
     cache: "no-store",
   });
-
   const resData = (await res.json()).bpi as BitcoinPriceIndexData;
-  console.log("resData >>", resData);
   return resData;
 };

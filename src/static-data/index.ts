@@ -1,4 +1,4 @@
-import { BarChart, Bitcoin, File, LineChart } from "lucide-react";
+import { BarChart, CircleDollarSign, LineChart } from "lucide-react";
 
 export const linkData = {
   group: {
@@ -17,7 +17,7 @@ export const linkData = {
       {
         name: "Cryptocurrency",
         path: "/cryptocurrency",
-        icon: Bitcoin,
+        icon: CircleDollarSign,
       },
     ],
   },

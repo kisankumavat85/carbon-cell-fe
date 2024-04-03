@@ -15,7 +15,7 @@ interface Props {
 
 const Card = ({ code, description, rate, symbol }: Props) => {
   return (
-    <UICard className="bg-cardBg shadow-sm transition-shadow duration-300  hover:shadow-lg">
+    <UICard className="bg-cardBg shadow-sm transition-shadow duration-300  hover:shadow-lg border border-e-8 border-red-500">
       <CardHeader>
         <CardTitle>{code}</CardTitle>
         <CardDescription>{description}</CardDescription>

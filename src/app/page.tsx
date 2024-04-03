@@ -27,7 +27,9 @@ export default async function Home() {
 
   return (
     <div className="p-6 w-full">
-      <h1 className="text-3xl mb-16 font-bold">USA Population (Line chart)</h1>
+      <h1 className="text-3xl mb-16 font-bold text-red-500">
+        USA Population (Line chart)
+      </h1>
       <div className="w-full">
         <LineChart data={chartData} xTitle="Year" yTitle="Population" />
       </div>
